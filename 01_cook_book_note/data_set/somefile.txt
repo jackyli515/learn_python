@@ -1,0 +1,18 @@
+from collections import deque
+1def search(lines, pattern, history=5):
+2previous_lines = deque(maxlen=history)
+3for line in lines:
+4if pattern in line:
+5yield line, previous_lines
+python_lines = [line for line in lines if 'python' in line]
+previous_lines.append(line)
+previous_lines = deque(maxlen=history)
+for line in lines:
+if pattern in line:
+yield line, previous_lines
+previous_lines.append(line)
+previous_lines = deque(maxlen=history)
+for line in lines:
+if pattern in line:
+yield line, previous_lines
+previous_lines.append(line)
