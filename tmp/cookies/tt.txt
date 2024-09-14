@@ -1,0 +1,2 @@
+#LWP-Cookies-2.0
+Set-Cookie3: username=tt; path="/"; domain="httpbin.org"; path_spec; discard; version=0
